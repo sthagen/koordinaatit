@@ -27,6 +27,22 @@ class Unit(Enum):
     FEET = auto()
 
 
+class Length:
+    """Provide conversions between meter and feet.
+    
+    Internal representation of unit is meter.
+    """
+    WUN_METER = 0.3048  # feet
+    def __init__(self, value: Union[int, float], unit: Unit):
+        self.base_value = unit
+        self.unit = unit
+        if self.unit is not Unit.METER or self.unit is not Unit.FEET:
+            raise ValueError('length unit neither meter nor feet')
+
+        if self.unit is Unit.FEET:
+            self.base_value /= WUN_METER
+
+
 class Koordinaati:
     """Coordinate representations require handling.
     
