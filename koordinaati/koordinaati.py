@@ -46,11 +46,11 @@ class Koordinaati:
         self.what = labelDimension()
     
     def labelDimension(self):
-        """Delegate labeling to enumeration."""
+        """Delegate labeling of dimension to the enumeration type."""
         return self.dimension.name
 
     def labelUnit(self):
-        """Delegate labeling to enumeration."""
+        """Delegate labeling of unit to the enumeration type."""
         return self.unit.name
 
     def unitValidForDimension(self):
