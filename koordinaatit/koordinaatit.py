@@ -4,7 +4,7 @@
 import math
 import os
 import sys
-from enum import Enum
+from enum import Enum, auto
 from typing import List, Union
 
 
