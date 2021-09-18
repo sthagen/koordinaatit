@@ -28,14 +28,22 @@ class Unit(Enum):
 
 
 class Koordinaati:
-    """Coordinate representations require handling."""
-    def __init__(self, dimension: Dimension, value: Union[int, float], unit: Unit):
+    """Coordinate representations require handling.
+    
+    Internal representation is per float.
+    """
+    def __init__(self, dimension: Dimension, value: Union[int, float, str], unit: Unit):
         self.sexagesimal = None
         self.decimal = None
         self.na = True
         self.dimension = dimension
         self.value = value
         self.unit = unit
+        self.what = labelDimension(self)
+    
+    def labelDimension(self):
+        """Delegate labelling to enumeration."""
+        return self.dimension.name
 
 
 def main(argv: Union[List[str], None] = None) -> int:
