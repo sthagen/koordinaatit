@@ -30,7 +30,7 @@ class Unit(Enum):
 class Koordinaati:
     """Coordinate representations require handling.
     
-    Internal representation is per float.
+    Internal representation of value is as float.
     """
     def __init__(self, dimension: Dimension, value: Union[int, float, str], unit: Unit):
         self.sexagesimal = None
