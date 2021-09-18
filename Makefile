@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
-isort = isort koordinaati tests
-black = black -S -l 120 --target-version py39 koordinaati tests
+isort = isort koordinaatit tests
+black = black -S -l 120 --target-version py39 koordinaatit tests
 
 .PHONY: install
 install:
@@ -20,17 +20,17 @@ format:
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	flake8 koordinaati/ tests/
+	flake8 koordinaatit/ tests/
 	$(isort) --check-only --df
 	$(black) --check --diff
 
 .PHONY: mypy
 mypy:
-	mypy koordinaati
+	mypy koordinaatit
 
 .PHONY: test
 test:
-	pytest --cov=koordinaati --log-format="%(levelname)s %(message)s"
+	pytest --cov=koordinaatit --log-format="%(levelname)s %(message)s"
 
 .PHONY: testcov
 testcov: test
@@ -53,4 +53,3 @@ clean:
 	rm -f .coverage.*
 	rm -rf build
 	python setup.py clean
-  
