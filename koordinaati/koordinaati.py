@@ -39,11 +39,16 @@ class Koordinaati:
         self.dimension = dimension
         self.value = value
         self.unit = unit
+        self.unit_label = labelUnit(self)
         self.what = labelDimension(self)
     
     def labelDimension(self):
-        """Delegate labelling to enumeration."""
+        """Delegate labeling to enumeration."""
         return self.dimension.name
+
+    def labelUnit(self):
+        """Delegate labeling to enumeration."""
+        return self.unit.name
 
 
 def main(argv: Union[List[str], None] = None) -> int:
