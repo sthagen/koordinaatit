@@ -8,7 +8,7 @@ from enum import Enum
 from typing import List, Union
 
 
-DEBUG_VAR = 'KOORDINAATI_DEBUG'
+DEBUG_VAR = 'KOORDINAATIT_DEBUG'
 DEBUG = os.getenv(DEBUG_VAR)
 
 ENCODING = 'utf-8'
@@ -44,7 +44,7 @@ class Length:
             self.base_value /= WUN_METER
 
 
-class Koordinaati:
+class Koordinaatit:
     """Coordinate representations require handling.
     
     Internal representation of value is as float.

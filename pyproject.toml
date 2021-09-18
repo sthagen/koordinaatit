@@ -1,5 +1,5 @@
 [tool.pyflow]
-name = "koordinaati"
+name = "koordinaatit"
 py_version = "3.8"
 version = "0.0.1"
 authors = ["Stefan Hagen <stefan@hagen.link>"]

@@ -1,11 +1,11 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 # pylint: disable=line-too-long
-"""Commandline API gateway for koordinaati."""
+"""Commandline API gateway for koordinaatit."""
 import sys
 from typing import List, Union
 
-import koordinaati.koordinaati as coord
+import koordinaatit.koordinaatit as coord
 
 
 # pylint: disable=expression-not-assigned
