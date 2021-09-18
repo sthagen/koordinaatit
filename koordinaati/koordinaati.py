@@ -61,6 +61,14 @@ class Koordinaati:
         self.unit_label = labelUnit()
         self.what = labelDimension()
         
+    def isLatitide(self) -> bool:
+        """Service maybe YAGNI."""
+        return self.dimension is Dimension.LAT
+    
+    def isLongitude(self) -> bool:
+        """Service maybe YAGNI."""
+        return self.dimension is Dimension.LON
+    
     def isAltitude(self) -> bool:
         """Service maybe YAGNI."""
         return self.dimension is Dimension.ALT
