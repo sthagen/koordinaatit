@@ -2,4 +2,4 @@
 # pylint: disable=missing-docstring,unused-import,reimported
 import pytest  # type: ignore
 
-import koordinaati.cli as cli
+import koordinaatit.cli as cli
