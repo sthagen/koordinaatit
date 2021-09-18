@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=expression-not-assigned,line-too-long
 """Coordinates API."""
+import math
 import os
 import sys
 from enum import Enum
@@ -51,9 +52,9 @@ class Koordinaati:
     def __init__(self, dimension: Dimension, value: Union[int, float, str], unit: Unit):
         self.sexagesimal = None
         self.decimal = None
-        self.na = True
+        self.na = math.nan
         self.dimension = dimension
-        self.value = value
+        self.value = math.nan
         self.unit = unit
         if not unitValidForDimension():
             raise ValueError('unit not valid for dimension')
