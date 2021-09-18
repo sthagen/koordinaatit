@@ -13,6 +13,17 @@ ENCODING = 'utf-8'
 ENCODING_ERRORS_POLICY = 'ignore'
 
 
+class Koordinaati:
+    """Coordinate representations require handling."""
+    def __init__(self, unit, value, what):
+        self.sexagesimal = None
+        self.decimal = None
+        self.na = True
+        self.unit = unit
+        self.value = value
+        self.what = what
+
+
 def main(argv: Union[List[str], None] = None) -> int:
     """Drive the coordination."""
     argv = argv if argv else sys.argv[1:]
