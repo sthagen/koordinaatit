@@ -60,16 +60,20 @@ class Koordinaati:
 
         self.unit_label = labelUnit()
         self.what = labelDimension()
+        
+    def isAltitude(self) -> bool:
+        """Service maybe YAGNI."""
+        return self.dimension is Dimension.ALT
     
-    def labelDimension(self):
+    def labelDimension(self) -> str:
         """Delegate labeling of dimension to the enumeration type."""
         return self.dimension.name
 
-    def labelUnit(self):
+    def labelUnit(self) -> str:
         """Delegate labeling of unit to the enumeration type."""
         return self.unit.name
 
-    def unitValidForDimension(self):
+    def unitValidForDimension(self) -> bool:
         """Latitudes and altitude units must be degree or radian, altitudes meter or feet."""
         if self.dimension is Dimension.ALT:
             return self.unit is Unit.METER or self.unit is Unit.FEET
