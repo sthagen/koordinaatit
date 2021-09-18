@@ -39,8 +39,11 @@ class Koordinaati:
         self.dimension = dimension
         self.value = value
         self.unit = unit
-        self.unit_label = labelUnit(self)
-        self.what = labelDimension(self)
+        if not unitValidForDimension():
+            raise ValueError('unit not valid for dimension')
+
+        self.unit_label = labelUnit()
+        self.what = labelDimension()
     
     def labelDimension(self):
         """Delegate labeling to enumeration."""
@@ -49,6 +52,13 @@ class Koordinaati:
     def labelUnit(self):
         """Delegate labeling to enumeration."""
         return self.unit.name
+
+    def unitValidForDimension(self):
+        """Latitudes and altitude units must be degree or radian, altitudes meter or feet."""
+        if self.dimension is Dimension.ALT:
+            return self.unit is Unit.METER or self.unit is Unit.FEET
+        
+        return self.unit is Unit.DEGREE or self.unit is Unit.RADIAN
 
 
 def main(argv: Union[List[str], None] = None) -> int:
