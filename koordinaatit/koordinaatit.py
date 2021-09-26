@@ -7,7 +7,6 @@ import sys
 from enum import Enum, auto
 from typing import List, Union
 
-
 DEBUG_VAR = 'KOORDINAATIT_DEBUG'
 DEBUG = os.getenv(DEBUG_VAR)
 
@@ -23,32 +22,35 @@ class Dimension(Enum):
 
 class Unit(Enum):
     DEGREE = auto()
-    RADIAN= auto()
+    RADIAN = auto()
     METER = auto()
     FEET = auto()
 
 
 class Length:
     """Provide conversions between meter and feet.
-    
+
     Internal representation of unit is meter.
     """
+
     WUN_METER = 0.3048  # feet
+
     def __init__(self, value: Union[int, float], unit: Unit):
-        self.base_value = unit
+        self.base_value = value
         self.unit = unit
-        if self.unit is not Unit.METER or self.unit is not Unit.FEET:
+        if self.unit is not Unit.METER and self.unit is not Unit.FEET:
             raise ValueError('length unit neither meter nor feet')
 
         if self.unit is Unit.FEET:
-            self.base_value /= WUN_METER
+            self.base_value /= Length.WUN_METER
 
 
 class Koordinaatit:
     """Coordinate representations require handling.
-    
+
     Internal representation of value is as float.
     """
+
     def __init__(self, dimension: Dimension, value: Union[int, float, str], unit: Unit):
         self.sexagesimal = None
         self.decimal = None
@@ -56,24 +58,24 @@ class Koordinaatit:
         self.dimension = dimension
         self.value = math.nan
         self.unit = unit
-        if not unitValidForDimension():
+        if not self.unitValidForDimension():
             raise ValueError('unit not valid for dimension')
 
-        self.unit_label = labelUnit()
-        self.what = labelDimension()
-        
+        self.unit_label = self.labelUnit()
+        self.what = self.labelDimension()
+
     def isLatitide(self) -> bool:
         """Service maybe YAGNI."""
         return self.dimension is Dimension.LAT
-    
+
     def isLongitude(self) -> bool:
         """Service maybe YAGNI."""
         return self.dimension is Dimension.LON
-    
+
     def isAltitude(self) -> bool:
         """Service maybe YAGNI."""
         return self.dimension is Dimension.ALT
-    
+
     def labelDimension(self) -> str:
         """Delegate labeling of dimension to the enumeration type."""
         return self.dimension.name
@@ -86,7 +88,7 @@ class Koordinaatit:
         """Latitudes and altitude units must be degree or radian, altitudes meter or feet."""
         if self.dimension is Dimension.ALT:
             return self.unit is Unit.METER or self.unit is Unit.FEET
-        
+
         return self.unit is Unit.DEGREE or self.unit is Unit.RADIAN
 
 
@@ -96,5 +98,5 @@ def main(argv: Union[List[str], None] = None) -> int:
     if not argv:
         print('ERROR arguments expected.', file=sys.stderr)
         return 2
-    
+
     return 0
