@@ -58,33 +58,33 @@ class Koordinaatit:
         self.dimension = dimension
         self.value = math.nan
         self.unit = unit
-        if not self.unitValidForDimension():
+        if not self.unit_valid_for_dimension():
             raise ValueError('unit not valid for dimension')
 
-        self.unit_label = self.labelUnit()
-        self.what = self.labelDimension()
+        self.unit_label = self.label_unit()
+        self.what = self.label_dimension()
 
-    def isLatitide(self) -> bool:
+    def is_latitide(self) -> bool:
         """Service maybe YAGNI."""
         return self.dimension is Dimension.LAT
 
-    def isLongitude(self) -> bool:
+    def is_longitude(self) -> bool:
         """Service maybe YAGNI."""
         return self.dimension is Dimension.LON
 
-    def isAltitude(self) -> bool:
+    def is_altitude(self) -> bool:
         """Service maybe YAGNI."""
         return self.dimension is Dimension.ALT
 
-    def labelDimension(self) -> str:
+    def label_dimension(self) -> str:
         """Delegate labeling of dimension to the enumeration type."""
         return self.dimension.name
 
-    def labelUnit(self) -> str:
+    def label_unit(self) -> str:
         """Delegate labeling of unit to the enumeration type."""
         return self.unit.name
 
-    def unitValidForDimension(self) -> bool:
+    def unit_valid_for_dimension(self) -> bool:
         """Latitudes and altitude units must be degree or radian, altitudes meter or feet."""
         if self.dimension is Dimension.ALT:
             return self.unit is Unit.METER or self.unit is Unit.FEET
