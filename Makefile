@@ -51,5 +51,5 @@ clean:
 	rm -rf *.egg-info
 	rm -f .coverage
 	rm -f .coverage.*
-	rm -rf build
+	rm -rf build test/.mypy_cache/
 	python setup.py clean
