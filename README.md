@@ -6,4 +6,4 @@ Experimental round trip conversion API for lofty coordinates implemented in pyth
 
 Experimental.
 
-**Note**: The default branch is default.
+**Note**: The default branch is `default`.
