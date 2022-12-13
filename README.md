@@ -1,8 +1,10 @@
-# koordinaatit
+# Koordinaatit
 
 Experimental round trip conversion API for lofty coordinates implemented in python.
 
 [License: MIT](https://git.sr.ht/~sthagen/koordinaatit/tree/default/item/LICENSE)
+
+Third party dependencies are documented in the folder [third-party](third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/koordinaatit.svg?style=flat)](https://pypi.python.org/pypi/koordinaatit/)
 [![downloads](https://pepy.tech/badge/koordinaatit/month)](https://pepy.tech/project/koordinaatit)
