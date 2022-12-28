@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with SHA256 checksum ([eb129054 ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256 "sha256:eb1290541f696e4796150508fe2f489c417823c162a420c32b015728f03a76aa")).
-<!--[[[end]]] (checksum: 812341c60fb571722b9c71f87a7d90a3)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/koordinaatit/blob/default/sbom.json) with SHA256 checksum ([b6d426dc ...](https://git.sr.ht/~sthagen/koordinaatit/blob/default/sbom.json.sha256 "sha256:b6d426dc54840973ea495893b82ab8d1f194250d1548ae65586ad7b82528c248")).
+<!--[[[end]]] (checksum: d42452e33089c8661ed8e96191dace3a)-->
 
 None.
 
