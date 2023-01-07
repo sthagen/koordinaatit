@@ -20,10 +20,15 @@ format:
 	$(lint) --fix
 	$(black)
 
+.PHONY: init
+init:
+	pip install -r test/requirements.txt
+	pip install -r test/requirements-dev.txt
+
 .PHONY: lint
 lint:
 	validate-pyproject pyproject.toml
-	$(lint)
+	$(lint) --diff
 	$(black) --check --diff
 
 .PHONY: types
@@ -31,7 +36,7 @@ types:
 	$(types)
 
 .PHONY: test
-test:
+test: clean
 	$(pytest)
 
 .PHONY: testcov
