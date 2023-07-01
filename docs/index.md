@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](third-party/
 [![wheel](https://img.shields.io/pypi/wheel/koordinaatit.svg?style=flat)](https://pypi.python.org/pypi/koordinaatit/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/koordinaatit.svg?style=flat)](https://pypi.python.org/pypi/koordinaatit/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/koordinaatit.svg?style=flat)](https://pypi.python.org/pypi/koordinaatit/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/koordinaatit.svg?style=flat)](https://git.sr.ht/~sthagen/koordinaatit/log)
 
 ## Bug Tracker
 
