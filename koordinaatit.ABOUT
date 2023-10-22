@@ -1,0 +1,14 @@
+name: koordinaatit
+description: Coordinates (Finnish: koordinatit) - experimental round trip conversion API for lofty coordinates.
+license_spdx: MIT
+version: 2023.10.22
+spec_version: 1.0
+home_url: https://git.sr.ht/~sthagen/koordinaatit
+news_url: https://libraries.io/pypi/koordinaatit/versions.atom
+date: 2023-10-22
+about_resource: ./
+libraries_io_url: https://libraries.io/pypi/koordinaatit?number=2023.10.22
+vcs_tool: git
+vcs_repository: https://git.sr.ht/~sthagen/koordinaatit
+vcs_branch: default
+
