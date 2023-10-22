@@ -1,5 +1,7 @@
 site_name: Koordinaatit
 site_description: "Coordinates (Finnish: koordinaatit) - experimental round trip conversion API for lofty coordinates implemented in python."
+docs_dir: ../docs
+site_dir: ../site
 
 theme:
   name: 'material'
