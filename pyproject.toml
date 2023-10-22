@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "koordinaatit"
-version = "2022.12.27"
+version = "2023.10.22"
 description = "Coordinates (Finnish: koordinatit) - experimental round trip conversion API for lofty coordinates."
 readme = "README.md"
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
