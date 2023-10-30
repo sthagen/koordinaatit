@@ -8,9 +8,9 @@ Experimental round trip conversion API for lofty coordinates implemented in pyth
 [![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
 [![Version](https://img.shields.io/pypi/v/koordinaatit.svg?style=flat)](https://pypi.python.org/pypi/koordinaatit/)
-[![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/koordinaatit)
+[![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/koordinaatit)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/koordinaatit.svg?style=flat)](https://pypi.python.org/pypi/koordinaatit/)
-[![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/koordinaatit/log)
+[![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/koordinaatit/log)
 
 ## Bug Tracker
 
