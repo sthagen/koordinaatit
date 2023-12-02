@@ -1,0 +1,18 @@
+{
+  "koordinaatit": {
+    "version": "7.3.2",
+    "timestamp": "2023-12-02T15:21:24.137623",
+    "branch_coverage": true,
+    "show_contexts": true,
+    "covered_lines": 43,
+    "num_statements": 69,
+    "percent_covered": 56.79012345679013,
+    "percent_covered_display": "56.79",
+    "missing_lines": 26,
+    "excluded_lines": 0,
+    "num_branches": 12,
+    "num_partial_branches": 1,
+    "covered_branches": 3,
+    "missing_branches": 9
+  }
+}
