@@ -1,7 +1,7 @@
 {
   "koordinaatit": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:21:24.137623",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 15:56:30 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 43,
@@ -13,6 +13,22 @@
     "num_branches": 12,
     "num_partial_branches": 1,
     "covered_branches": 3,
-    "missing_branches": 9
+    "missing_branches": 9,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 3,
+    "files": [
+      "koordinaatit/__init__.py",
+      "koordinaatit/cli.py",
+      "koordinaatit/koordinaatit.py"
+    ],
+    "blake3": "38d31854cce11e541dcbbc954168238a5f880562e52181eb7010d9f01866093a",
+    "blake2": "24e5f3fe04352843b7e14a5fdb1540e4f5327220a6450e201d621fbd678c1c58c6a5266abc426bbe1456e69e53c50c0d0ad273abbdca412934ee6ed9c208d88b",
+    "sha512": "65e55672881731298ab9f77089c7a71050a327c5c39493ca2bc05cfb6ffcbe1b373acc11bb9009490822ef6944245145937cfd849761ebcd260310f452404441",
+    "sha384": "ab2695b4112a5e14200e8506d231ca9580a70840050442034af4a767ec1e79b8d7ba869e21aa80fac576a40a8b3f9586",
+    "sha256": "edd4cabb95b071dac24f096b4181ade2160a7ae53fece2f8dd689169c3ec6983",
+    "sha1": "0fd925257214dc468b320d5d419a1e30e4433d55",
+    "md5": "4026a6f9058607b901bab12219047a9a",
+    "python_version": "3.10.12",
+    "entropy": 4.836599
   }
 }
