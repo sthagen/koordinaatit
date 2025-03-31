@@ -32,11 +32,6 @@
     },
     {
       "category": "null",
-      "date": "2024-09",
-      "downloads": 2
-    },
-    {
-      "category": "null",
       "date": "2024-10",
       "downloads": 87
     },
@@ -63,7 +58,7 @@
     {
       "category": "null",
       "date": "2025-03",
-      "downloads": 54
+      "downloads": 56
     }
   ],
   "package": "koordinaatit",
